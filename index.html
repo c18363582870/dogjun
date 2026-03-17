@@ -3,19 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- 视口设置，确保在移动设备上正确显示 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="baidu-site-verification" content="东骏电机-三相异步电动机专业生产厂家" />
   <meta name="keywords" content="东骏电机,三相异步电动机,电机厂家,高效节能电机,工业电机,定制电机">
   <meta name="description" content="东骏电机是专业生产三相异步电动机的厂家，提供高质量、高效率的电机产品，满足各种工业和商业应用需求。">
   <meta name="author" content="东骏电机">
-  <!-- 网页标题 -->
   <title>东骏电机 - 三相异步电动机专业生产厂家</title>
-  <!-- 引入Font Awesome图标库 -->
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
-  <!-- 引入Tailwind CSS -->
+  <link rel="preload" href="imgs/车间图片01.jpg" as="image">
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Tailwind CSS配置 -->
   <script>
     tailwind.config = {
       theme: {
@@ -45,8 +41,8 @@
       <!-- 网站标志 -->
       <div class="flex items-center">
         <a href="index.html" class="text-2xl font-bold text-primary flex items-center">
-          <i class="fa-solid fa-gear fa-spin"></i> <!-- 齿轮图标 -->
-          <span>东骏电机</span> <!-- 网站名称 -->
+          <i class="fa-solid fa-gear fa-spin"></i>
+          <span>东骏电机</span>
         </a>
       </div>
       <!-- 桌面端导航菜单 -->
@@ -74,15 +70,15 @@
     </div>
   </header>
 
-  <!-- 英雄区 -->
+  <!-- 分类区 -->
   <section class="pt-24 pb-16 bg-gradient-blue text-white">
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row items-center">
-        <!-- 英雄区左侧文本内容 -->
+        <!-- 分类区左侧文本内容 -->
         <div class="md:w-1/2 mb-8 md:mb-0">
           <h1 class="text-4xl md:text-5xl font-bold mb-4 text-shadow">三相异步电动机专业生产厂家</h1>
           <p class="text-lg md:text-xl mb-8 opacity-90">东骏电机致力于为客户提供高质量、高效率的电动机产品，满足各种工业和商业应用需求。</p>
-          <!-- 英雄区按钮 -->
+          <!-- 分类区按钮 -->
           <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
             <a href="products.html" class="btn btn-primary">
               查看产品
@@ -92,7 +88,7 @@
             </a>
           </div>
         </div>
-        <!-- 英雄区右侧图片 -->
+        <!-- 分类区右侧图片 -->
         <div class="md:w-1/2">
           <img
             src="imgs/车间图片01.jpg"
@@ -143,7 +139,7 @@
       <!-- 产品卡片网格 -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- 产品1：YBFVP系列 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
           <img
             src="imgs/YBFVP.png"
             alt="YBFVP系列三相异步电动机" class="imgs01" loading="lazy">
@@ -156,10 +152,10 @@
           </div>
         </div>
         <!-- 产品2：YEJ系列 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
           <img
             src="imgs/YEJ电磁制动.png"
-            alt="YEJ系列电磁制动三相异步电动机" class="imgs01" loading="lazy">
+            alt="YEJ系列电磁制动三相异步电动机" class="imgs01 mt-10 mb-32 ml-8 min-w-110" loading="lazy">
           <div class="p-6">
             <h3 class="text-xl font-bold mb-2 text-dark">YEJ系列电磁制动三相异步电动机</h3>
             <p class="text-gray-600 mb-4">符合国家能效标准，节能效果显著，运行稳定。</p>
@@ -169,7 +165,7 @@
           </div>
         </div>
         <!-- 产品3：系列 -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
           <img
             src="imgs/YVP变频专用.png"
             alt="YVP系列变频专用三相异步电动机" class="imgs01" loading="lazy">
