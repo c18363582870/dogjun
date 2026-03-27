@@ -34,7 +34,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="bg-light font-sans">
+<body class="bg-light font-sans select-none">
   <!-- 导航栏 -->
   <header class="bg-white shadow-md fixed w-full z-50">
     <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -46,11 +46,19 @@
         </a>
       </div>
       <!-- 桌面端导航菜单 -->
-      <div class="hidden md:flex space-x-8">
-        <a href="index.html" class="text-dark hover:text-primary font-medium">首页</a>
-        <a href="about.html" class="text-dark hover:text-primary font-medium">关于我们</a>
-        <a href="products.html" class="text-dark hover:text-primary font-medium">产品展示</a>
-        <a href="contact.html" class="text-dark hover:text-primary font-medium">联系我们</a>
+      <div class="hidden md:flex space-x-10">
+        <div class="">
+          <a href="index.html" class="text-dark hover:text-primary font-medium">首页</a>
+        </div>
+        <div>
+          <a href="about.html" class="text-dark hover:text-primary font-medium">关于我们</a>
+        </div>
+        <div>
+          <a href="products.html" class="text-dark hover:text-primary font-medium">产品展示</a>
+        </div>
+        <div>
+          <a href="contact.html" class="text-dark hover:text-primary font-medium">联系我们</a>
+        </div>
       </div>
       <!-- 移动端菜单按钮 -->
       <div class="md:hidden">
@@ -92,7 +100,8 @@
         <div class="md:w-1/2">
           <img
             src="imgs/车间图片01.jpg"
-            alt="三相异步电动机" class="rounded-lg shadow-xl w-full height-full" loading="lazy">
+            alt="三相异步电动机" class="rounded-lg shadow-xl w-full height-full duration-300 hover:scale-105" loading="lazy">
+
         </div>
       </div>
     </div>
@@ -105,7 +114,7 @@
       <!-- 优势卡片网格 -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- 优势1：优质材料 -->
-        <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:scale-105">
           <div class="text-primary text-4xl mb-4">
             <i class="fas fa-check-circle"></i> <!-- 检查图标 -->
           </div>
@@ -113,7 +122,7 @@
           <p class="text-gray-600">采用高品质原材料，确保电机的稳定性和使用寿命。</p>
         </div>
         <!-- 优势2：先进工艺 -->
-        <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:scale-105">
           <div class="text-primary text-4xl mb-4">
             <i class="fas fa-cogs"></i> <!-- 齿轮图标 -->
           </div>
@@ -121,7 +130,7 @@
           <p class="text-gray-600">运用先进的生产工艺和设备，保证产品质量和性能。</p>
         </div>
         <!-- 优势3：完善服务 -->
-        <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+        <div class="bg-light p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 hover:scale-105">
           <div class="text-primary text-4xl mb-4">
             <i class="fas fa-life-ring"></i> <!-- 救生圈图标 -->
           </div>
@@ -139,40 +148,46 @@
       <!-- 产品卡片网格 -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- 产品1：YBFVP系列 -->
-        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-          <img
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto">
+          <div class="flex justify-center items-center p-10">
+            <img
             src="imgs/YBFVP.png"
-            alt="YBFVP系列三相异步电动机" class="imgs01" loading="lazy">
-          <div class="p-6">
+            alt="YBFVP系列三相异步电动机" class="imgs01 self-auto mt-10 mb-10 ml-8 mr-8" loading="lazy">
+          </div>
+          <div class="p-2">
             <h3 class="text-xl font-bold mb-2 text-dark">YBFVP系列三相异步电动机</h3>
             <p class="text-gray-600 mb-4">高效节能，噪音低，振动小，适用于各种工业设备。</p>
-            <a href="products.html" class="link-primary">
+            <a href="products.html#YBFVP" class="link-primary">
               查看详情 <i class="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
         </div>
         <!-- 产品2：YEJ系列 -->
-        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-          <img
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto">
+          <div class="flex justify-center items-center p-10" style="height: 450px;">
+            <img
             src="imgs/YEJ电磁制动.png"
-            alt="YEJ系列电磁制动三相异步电动机" class="imgs01 mt-10 mb-32 ml-8 min-w-110" loading="lazy">
-          <div class="p-6">
+            alt="YEJ系列电磁制动三相异步电动机" class="imgs01 self-auto mt-10 mb-10 ml-8 mr-8" loading="lazy">
+          </div>
+          <div class="p-2">
             <h3 class="text-xl font-bold mb-2 text-dark">YEJ系列电磁制动三相异步电动机</h3>
             <p class="text-gray-600 mb-4">符合国家能效标准，节能效果显著，运行稳定。</p>
-            <a href="products.html" class="link-primary">
+            <a href="products.html#YEJ" class="link-primary">
               查看详情 <i class="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
         </div>
-        <!-- 产品3：系列 -->
-        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-          <img
+        <!-- 产品3：YVP系列 -->
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto">
+          <div class="flex justify-center items-center p-10">
+            <img
             src="imgs/YVP变频专用.png"
-            alt="YVP系列变频专用三相异步电动机" class="imgs01" loading="lazy">
-          <div class="p-6">
+            alt="YVP系列变频专用三相异步电动机" class="imgs01 self-auto mt-10 mb-10 ml-8 mr-8" loading="lazy">
+          </div>
+          <div class="p-2">
             <h3 class="text-xl font-bold mb-2 text-dark">YVP系列变频专用三相异步电动机</h3>
             <p class="text-gray-600 mb-4">采用全新设计，结构紧凑，性能优越，适用范围广。</p>
-            <a href="products.html" class="link-primary">
+            <a href="products.html#YVP" class="link-primary">
               查看详情 <i class="fas fa-arrow-right ml-2"></i>
             </a>
           </div>
