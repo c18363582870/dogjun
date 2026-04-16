@@ -72,7 +72,7 @@
         background-color: rgb(180 83 9 / var(--tw-bg-opacity, 1));
         border: 2px solid white;
         color: white;
-        transition-duration: 1000ms;
+        transition-duration: 300ms;
     }
 
     .btn-secondary:hover {
@@ -90,7 +90,7 @@
         background-color: #1e40af;
         color: white;
         display: inline-block;
-        transition-duration: 1000ms;
+        transition-duration: 300ms;
     }
 
     .btn-outline:hover {
@@ -118,12 +118,11 @@
 }
 
 .imgs01 {
-    max-width: 80%;  /* 宽度不超过父容器 */
+    max-width: 100%;  /* 宽度不超过父容器 */
     height: auto; /* 高度自动调整，保持图片比例 */
-    object-fit: cover;
 }
 .imgs02 {
-    width: 80%;
+    width: 100%;
     height: auto; /* 固定高度，保持一致的卡片布局 */
     object-fit: cover; /* 保持图片比例，填充整个容器 */
 }

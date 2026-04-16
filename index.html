@@ -11,9 +11,6 @@
   <title>东骏电机 - 三相异步电动机专业生产厂家</title>
   <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="preload" href="imgs/车间图片01.jpg" as="image">
-  <link rel="preload" href="imgs/YBFVP.png" as="image">
-  <link rel="preload" href="imgs/YEJ电磁制动.png" as="image">
-  <link rel="preload" href="imgs/YVP变频专用.png" as="image">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -81,32 +78,15 @@
     </div>
   </header>
 
-  <!-- 分类区 -->
-  <section class="pt-24 pb-16 bg-gradient-blue text-white">
-    <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row items-center">
-        <!-- 分类区左侧文本内容 -->
-        <div class="md:w-1/2 mb-8 md:mb-0">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-shadow">三相异步电动机专业生产厂家</h1>
-          <p class="text-lg md:text-xl mb-8 opacity-90">东骏电机致力于为客户提供高质量、高效率的电动机产品，满足各种工业和商业应用需求。</p>
-          <!-- 分类区按钮 -->
-          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <a href="products.html" class="btn btn-primary">
-              查看产品
-            </a>
-            <a href="contact.html" class="btn btn-secondary">
-              联系我们
-            </a>
-          </div>
-        </div>
-        <!-- 分类区右侧图片 -->
-        <div class="md:w-1/2">
-          <img
-            src="imgs/车间图片01.jpg"
-            alt="三相异步电动机" class="rounded-lg shadow-xl w-full height-full duration-300 hover:scale-105">
-
-        </div>
-      </div>
+  <!-- 背景图片 -->
+  <section class="bg-gradient-blue text-white">
+    <div class="md:w-full min-h-[700px] md:mb-0 text-center flex items-center justify-center relative overflow-hidden bg-fixed" 
+        style="background-image: url(./imgs/车间图片01.jpg); background-size: cover; background-position: center;">
+  <!-- 背景图片四边淡化效果 -->
+      <div class="absolute inset-0 bg-gradient-to-br from-black/60 via-black/20 to-black/60"></div>
+        <div class="max-w-3xl px-4 relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 [text-shadow:_0_1px_0_rgb(180_180_180_/_60%),_0_2px_4px_rgb(200_200_200_/_30%)]">三相异步电动机专业生产厂家</h1>
+        <p class="text-lg md:text-xl mb-8 opacity-90 [text-shadow:_0_1px_2px_rgb(100_100_100_/_50%)]">东骏电机致力于为客户提供高质量、高效率的电动机产品，满足各种工业和商业应用需求。</p>
     </div>
   </section>
 
@@ -152,12 +132,10 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- 产品1：YBFVP系列 -->
         <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto">
-          <div class="flex justify-center items-center p-10">
-            <img
+          <img
             src="imgs/YBFVP.png"
-            alt="YBFVP系列三相异步电动机" class="imgs01 self-auto mt-10 mb-10 ml-8 mr-8">
-          </div>
-          <div class="p-2">
+            alt="YBFVP系列三相异步电动机" class="imgs01 self-auto" loading="lazy">
+          <div class="p-6">
             <h3 class="text-xl font-bold mb-2 text-dark">YBFVP系列三相异步电动机</h3>
             <p class="text-gray-600 mb-4">高效节能，噪音低，振动小，适用于各种工业设备。</p>
             <a href="products.html#YBFVP" class="link-primary">
@@ -166,13 +144,11 @@
           </div>
         </div>
         <!-- 产品2：YEJ系列 -->
-        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto">
-          <div class="flex justify-center items-center p-10" style="height: 450px;">
-            <img
+        <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto flex flex-col justify-between">
+          <img
             src="imgs/YEJ电磁制动.png"
-            alt="YEJ系列电磁制动三相异步电动机" class="imgs01 self-auto mt-10 mb-10 ml-8 mr-8">
-          </div>
-          <div class="p-2">
+            alt="YEJ系列电磁制动三相异步电动机" class="imgs01 mx-auto self-auto mt-14" loading="lazy">
+          <div class="p-6">
             <h3 class="text-xl font-bold mb-2 text-dark">YEJ系列电磁制动三相异步电动机</h3>
             <p class="text-gray-600 mb-4">符合国家能效标准，节能效果显著，运行稳定。</p>
             <a href="products.html#YEJ" class="link-primary">
@@ -180,14 +156,12 @@
             </a>
           </div>
         </div>
-        <!-- 产品3：YVP系列 -->
+        <!-- 产品3：系列 -->
         <div class="h-800 bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 hover:scale-105 self-auto">
-          <div class="flex justify-center items-center p-10">
-            <img
+          <img
             src="imgs/YVP变频专用.png"
-            alt="YVP系列变频专用三相异步电动机" class="imgs01 self-auto mt-10 mb-10 ml-8 mr-8">
-          </div>
-          <div class="p-2">
+            alt="YVP系列变频专用三相异步电动机" class="imgs01 self-auto" loading="lazy">
+          <div class="p-6">
             <h3 class="text-xl font-bold mb-2 text-dark">YVP系列变频专用三相异步电动机</h3>
             <p class="text-gray-600 mb-4">采用全新设计，结构紧凑，性能优越，适用范围广。</p>
             <a href="products.html#YVP" class="link-primary">
